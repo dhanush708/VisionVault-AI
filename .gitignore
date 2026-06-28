@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+
+# Environment
+.env
+.env.*
+aws_session.env
+
+# Runtime
+logs/
+storage/
+uploads/
+
+# Node
+node_modules/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Database
+*.db
+*.sqlite

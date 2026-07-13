@@ -13,7 +13,7 @@ if sys.platform.startswith("win"):
     except Exception:
         pass
 
-BASE_URL = "http://localhost:8000"
+BASE_URL = "http://localhost:8002"
 
 
 def generate_dummy_video() -> Path:

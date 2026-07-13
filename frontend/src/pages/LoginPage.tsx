@@ -88,7 +88,7 @@ function LoginPage() {
         </div>
 
         <p className="text-center text-slate-600 text-xs mt-6">
-          AI-DLC Hackathon 2026 · VisionVault AI Platform
+          Created by Dhanush Anbu · AI-DLC Hackathon 2026 · VisionVault AI Platform
         </p>
       </div>
     </div>

@@ -1,3 +1,5 @@
+# Author: Dhanush Anbu
+# Project: VisionVault AI
 """AI Enhancement service — GPU-accelerated video quality restoration.
 
 Uses FFmpeg's sharpness and color enhancement filters as the processing backbone
@@ -220,6 +222,8 @@ def _generate_executive_report(video_id: str) -> dict:
     
     report = {
         "video_id": video_id,
+        "author": "Dhanush Anbu",
+        "project": "VisionVault AI",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "device": state.get("gpu_name", "NVIDIA GeForce RTX 4060 Laptop GPU"),
         "model_used": state.get("model", "Real-ESRGAN RRDBNet x4plus"),

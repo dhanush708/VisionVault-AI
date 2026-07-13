@@ -1,3 +1,5 @@
+# Author: Dhanush Anbu
+# Project: VisionVault AI
 """Application configuration loaded from environment variables."""
 
 import os
@@ -10,11 +12,13 @@ class Settings(BaseSettings):
 
     APP_NAME: str = "VisionVault AI"
     APP_VERSION: str = "1.0.0"
+    APP_AUTHOR: str = "Dhanush Anbu"
+    APP_REPOSITORY: str = "https://github.com/dhanush708"
     DEBUG: bool = False
 
     # Server
     HOST: str = "0.0.0.0"
-    PORT: int = 8000
+    PORT: int = 8002
 
     # AWS — credentials must be set in .env (never hardcoded)
     AWS_REGION: str = "us-east-1"

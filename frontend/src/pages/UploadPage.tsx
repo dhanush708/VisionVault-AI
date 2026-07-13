@@ -359,6 +359,10 @@ function UploadPage() {
             </button>
           </div>
         )}
+        {/* Footer */}
+        <footer className="relative z-10 py-6 text-center text-slate-600 text-[10px] mt-10 border-t border-white/5">
+          VisionVault AI · Built by Dhanush
+        </footer>
       </div>
     </div>
   );

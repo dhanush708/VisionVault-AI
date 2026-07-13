@@ -1,3 +1,5 @@
+# Author: Dhanush Anbu
+# Project: VisionVault AI
 """VisionVault AI — FastAPI Application Entry Point."""
 
 from contextlib import asynccontextmanager
@@ -33,7 +35,11 @@ def create_app() -> FastAPI:
     app = FastAPI(
         title=settings.APP_NAME,
         version=settings.APP_VERSION,
-        description="Enterprise AI-Powered CCTV Video Storage Optimization Platform",
+        description="Enterprise AI-Powered CCTV Video Storage Optimization Platform. Developed by Dhanush Anbu.",
+        contact={
+            "name": "Dhanush Anbu",
+            "url": "https://github.com/dhanush708",
+        },
         lifespan=lifespan,
     )
 

@@ -1,3 +1,5 @@
+# Author: Dhanush Anbu
+# Project: VisionVault AI
 """Pipeline orchestration service — coordinates the full processing workflow."""
 
 import json
@@ -124,6 +126,8 @@ def run_full_pipeline(video_id: str, input_path: str, profile: str = "balanced")
     _log_activity(video_id, "Saving to Amazon DynamoDB...", "dynamodb")
     full_record = {
         "video_id": video_id,
+        "author": "Dhanush Anbu",
+        "project": "VisionVault AI",
         "timestamp": datetime.now(timezone.utc).isoformat(),
         **({k: v for k, v in (result.get("metadata") or {}).items()}),
         "analysis": result.get("analysis", {}),

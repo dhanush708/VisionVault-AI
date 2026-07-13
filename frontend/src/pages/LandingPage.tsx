@@ -128,7 +128,7 @@ function LandingPage() {
 
       {/* Footer */}
       <footer className="relative z-10 py-6 border-t border-white/5 text-center text-slate-600 text-xs">
-        VisionVault AI · Powered by Amazon S3, DynamoDB & Bedrock · AI-DLC 2026
+        VisionVault AI · Local Mode · Created by Dhanush Anbu · AI-DLC 2026
       </footer>
     </div>
   );

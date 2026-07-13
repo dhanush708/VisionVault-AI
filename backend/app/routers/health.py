@@ -1,3 +1,5 @@
+# Author: Dhanush Anbu
+# Project: VisionVault AI
 """Health check and root endpoints."""
 
 from datetime import datetime, timezone
@@ -11,6 +13,20 @@ router = APIRouter()
 def root():
     """Root endpoint confirming the service is running."""
     return {"message": "VisionVault AI Backend Running"}
+
+
+@router.get("/about")
+def about():
+    """Return project attribution, author, version, description, and repository info."""
+    from app.config import get_settings
+    settings = get_settings()
+    return {
+        "project": settings.APP_NAME,
+        "author": settings.APP_AUTHOR,
+        "version": settings.APP_VERSION,
+        "description": "Enterprise AI-Powered CCTV Video Storage Optimization Platform",
+        "repository": settings.APP_REPOSITORY,
+    }
 
 
 @router.get("/health")
